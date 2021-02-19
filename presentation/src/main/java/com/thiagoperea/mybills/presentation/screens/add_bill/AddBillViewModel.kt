@@ -60,7 +60,7 @@ class AddBillViewModel(
         }
     }
 
-    private fun doOnSuccess(billId: String) {
+    fun doOnSuccess(billId: String) {
         if (attachmentUri != null) {
             uploadAttachmentUseCase.execute(attachmentUri, billId)
         }
@@ -68,7 +68,7 @@ class AddBillViewModel(
         _saveState.postValue(AddBillState.Success)
     }
 
-    private fun doOnError(error: Exception) {
+    fun doOnError(error: Exception) {
         if (error is SecurityException) {
             logoutUseCase.execute()
             _saveState.postValue(AddBillState.ErrorLoginInvalid)
@@ -77,7 +77,7 @@ class AddBillViewModel(
         }
     }
 
-    private fun isOverdue(dueDateAsDate: Date?): Boolean {
+    fun isOverdue(dueDateAsDate: Date?): Boolean {
         if (dueDateAsDate == null) {
             return false
         }

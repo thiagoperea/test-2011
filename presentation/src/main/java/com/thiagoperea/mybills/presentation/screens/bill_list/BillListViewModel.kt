@@ -35,7 +35,7 @@ class BillListViewModel(
         }
     }
 
-    private fun mapToListItem(billList: List<Bill>, isDone: Boolean) {
+    fun mapToListItem(billList: List<Bill>, isDone: Boolean) {
         val itemList = mutableListOf<BillItemList>()
 
         var lastDate = ""
@@ -65,7 +65,7 @@ class BillListViewModel(
     /**
      * Verify if current bill is on overdue
      */
-    private fun isOverdue(bill: Bill): Boolean {
+    fun isOverdue(bill: Bill): Boolean {
         val now = DateConverter.getTodayAsCalendar()
 
         val billDate = Calendar.getInstance().apply { time = bill.dueDate }
