@@ -1,0 +1,6 @@
+include ':datasource'
+include ':business'
+include ':presentation'
+include ':app'
+include ':core'
+rootProject.name = "MyBills"

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="@string/app_settings" />
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/notifications" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/notificationsSwitch"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="?listPreferredItemHeight"
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="16dp"
+        android:text="@string/enable_notifications" />
+
+    <LinearLayout
+        android:id="@+id/notificationsHourSelector"
+        android:layout_width="match_parent"
+        android:layout_height="?listPreferredItemHeight"
+        android:layout_marginTop="8dp"
+        android:background="?selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notifications_time" />
+
+        <TextView
+            android:id="@+id/notificationsHourValue"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            tools:text="10:00 AM" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/gray_100" />
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/account_management" />
+
+    <LinearLayout
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="?listPreferredItemHeight"
+        android:layout_marginTop="8dp"
+        android:background="?selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exit_app" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">MyBills</string>
+    <string name="add_bill">Adicionar Conta</string>
+    <string name="add_notification">Adicionar notificação?</string>
+    <string name="add_attachment">Adicionar anexo?</string>
+    <string name="attachment">Anexo</string>
+    <string name="attachment_selected"><![CDATA[< Anexo Selecionado >]]></string>
+    <string name="app_settings">Configurações do app</string>
+    <string name="account_management">Gerenciamento de conta</string>
+    <string name="bill_description">Descrição da conta</string>
+    <string name="creating_bill">Criando conta…</string>
+    <string name="dashboard">Resumo</string>
+    <string name="dashboard_greetings" formatted="false">Olá,\n%s</string>
+    <string name="due_date">Vencimento</string>
+    <string name="edit_bill">Editando Conta</string>
+    <string name="error_auth">Erro de autenticação.\nAbrindo login!</string>
+    <string name="error_default">Ocorreu um erro!</string>
+    <string name="error_fields">Campos obrigatórios não adicionados!</string>
+    <string name="expired_bills">Contas vencidas</string>
+    <string name="edit">Editar</string>
+    <string name="editing_bill">Editando conta…</string>
+    <string name="enable_notifications">Habilitar notificações</string>
+    <string name="exit_app">Sair do app</string>
+    <string name="finished">Finalizados</string>
+    <string name="is_paid_bill">Conta paga?</string>
+    <string name="is_received_bill">Conta recebida?</string>
+    <string name="new_bill">Nova Conta</string>
+    <string name="notification_hour">Hora notificação</string>
+    <string name="next_bills_to_pay">Próximas contas a pagar</string>
+    <string name="next_bills_to_receive">Próximas contas a receber</string>
+    <string name="no_expired_bills">nenhuma conta vencida =)</string>
+    <string name="no_bills_to_pay">nenhuma conta a pagar =)</string>
+    <string name="no_bills_to_receive">nenhuma conta a receber =)</string>
+    <string name="notifications">Notificações</string>
+    <string name="notifications_time">Hora da notificação</string>
+    <string name="open">Em Aberto</string>
+    <string name="options">Opções</string>
+    <string name="purchase">Compra</string>
+    <string name="save">Salvar</string>
+    <string name="sell">Venda</string>
+    <string name="starting_app">Iniciando app…</string>
+    <string name="to_pay">A pagar</string>
+    <string name="to_receive">A receber</string>
+    <string name="value">Valor</string>
+</resources>

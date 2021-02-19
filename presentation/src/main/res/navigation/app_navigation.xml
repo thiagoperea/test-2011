@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.thiagoperea.mybills.presentation.screens.main.dashboard.DashboardFragment"
+        android:label="@string/dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_to_pay"
+        android:name="com.thiagoperea.mybills.presentation.screens.main.to_pay.ToPayFragment"
+        android:label="@string/to_pay"
+        tools:layout="@layout/fragment_to_pay" />
+
+    <fragment
+        android:id="@+id/navigation_to_receive"
+        android:name="com.thiagoperea.mybills.presentation.screens.main.to_receive.ToReceiveFragment"
+        android:label="@string/to_receive"
+        tools:layout="@layout/fragment_to_receive" />
+
+</navigation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_upload_title">MyBills</string>
+    <string name="notification_upload_starting">Enviando imagem de anexo…</string>
+    <string name="notification_upload_success">Imagem enviada com sucesso!!</string>
+    <string name="notification_upload_error">Erro ao enviar imagem :(</string>
+    <string name="notification_bill_to_expire_title">A vencer</string>
+    <string name="notification_bill_expired_title">Contas vencidas!</string>
+    <string name="notification_bill_to_expire_message">Você tem contas a vencer!</string>
+    <string name="notification_bill_expired_message">Você tem contas vencidas!!!</string>
+</resources>

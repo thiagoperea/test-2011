@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "38514888339",
+    "project_id": "portfolio-bills",
+    "storage_bucket": "portfolio-bills.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38514888339:android:d4817b9947e1e2faf64766",
+        "android_client_info": {
+          "package_name": "com.thiagoperea.mybills.datasource"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "38514888339-9k2bi5m1meeulha0rov9a3ltplbk0t7h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaol4ik5hYtSxhpr9A1NIN63N8jkmmXaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "38514888339-9k2bi5m1meeulha0rov9a3ltplbk0t7h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

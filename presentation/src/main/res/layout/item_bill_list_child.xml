@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?selectableItemBackground">
+
+    <View
+        android:id="@+id/itemBillListChildMarkerUpper"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/gray_500"
+        app:layout_constraintBottom_toTopOf="@id/itemBillListChildMarker"
+        app:layout_constraintEnd_toEndOf="@id/itemBillListChildMarker"
+        app:layout_constraintStart_toStartOf="@id/itemBillListChildMarker"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/itemBillListChildMarker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_circle_filled"
+        app:tint="@color/green_700" />
+
+    <View
+        android:id="@+id/itemBillListChildMarkerLower"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/gray_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/itemBillListChildMarker"
+        app:layout_constraintStart_toStartOf="@id/itemBillListChildMarker"
+        app:layout_constraintTop_toBottomOf="@id/itemBillListChildMarker" />
+
+    <TextView
+        android:id="@+id/itemBillListChildDescription"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/itemBillListChildTotalValue"
+        app:layout_constraintStart_toEndOf="@id/itemBillListChildMarker"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Conta do Carro" />
+
+    <TextView
+        android:id="@+id/itemBillListChildTotalValue"
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/itemListaAtivosChildDetails"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="R$ 3.800,00" />
+
+    <ImageView
+        android:id="@+id/itemListaAtivosChildDetails"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_forward" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
