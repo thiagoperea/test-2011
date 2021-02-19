@@ -71,7 +71,7 @@ class DailyNotificationWorker(
     private fun sendExpiredNotification() {
         NotificationDispatcher.makeStatusNotification(
             context.getString(R.string.notification_bill_expired_title),
-            context.getString(R.string.notification_bill_expired_title),
+            context.getString(R.string.notification_bill_expired_message),
             R.drawable.ic_money,
             true,
             context
